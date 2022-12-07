@@ -6,4 +6,51 @@
     android:layout_height="match_parent"
     tools:context=".Pilotes">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_pilotes"
+        android:layout_width="389dp"
+        android:layout_height="556dp"
+        android:layout_marginTop="84dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_nouveau_pilote"
+        android:layout_width="154dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:text="Nouveau"
+        app:cornerRadius="70px"
+        app:icon="@android:drawable/ic_input_add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_pilotes" />
+
+    <Button
+        android:id="@+id/btn_vider_pilotes"
+        android:layout_width="126dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="#950505"
+        android:text="vider"
+        app:cornerRadius="70px"
+        app:icon="@android:drawable/ic_delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toEndOf="@+id/btn_nouveau_avion"
+        app:layout_constraintTop_toBottomOf="@+id/rv_pilotes" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:text="Pilotes"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

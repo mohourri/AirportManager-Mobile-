@@ -7,7 +7,7 @@
     tools:context=".Avions">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_avions"
+        android:id="@+id/rv_pilotes"
         android:layout_width="401dp"
         android:layout_height="422dp"
         android:layout_marginTop="12dp"
@@ -33,7 +33,7 @@
         android:layout_marginTop="88dp"
         android:text="Nouveau"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rv_avions" />
+        app:layout_constraintTop_toBottomOf="@+id/rv_pilotes" />
 
     <Button
         android:id="@+id/btn_vider_avions"
@@ -44,5 +44,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.329"
         app:layout_constraintStart_toEndOf="@+id/btn_nouveau_avion"
-        app:layout_constraintTop_toBottomOf="@+id/rv_avions" />
+        app:layout_constraintTop_toBottomOf="@+id/rv_pilotes" />
 </androidx.constraintlayout.widget.ConstraintLayout>

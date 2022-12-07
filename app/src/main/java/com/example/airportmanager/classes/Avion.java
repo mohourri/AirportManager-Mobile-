@@ -1,6 +1,8 @@
 package com.example.airportmanager.classes;
 
-public class Avion {
+import java.io.Serializable;
+
+public class Avion implements Serializable {
     int ID;
     String nom;
     int capacite;
@@ -12,6 +14,7 @@ public class Avion {
         this.capacite = capacite;
         this.entreprise = entreprise;
     }
+    public Avion() {}
 
     public int getID() {
         return ID;

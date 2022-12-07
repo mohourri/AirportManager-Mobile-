@@ -40,14 +40,15 @@ public class NouvelleAvion extends AppCompatActivity {
                 Avion av = new Avion(ID,nom,capacite,entreprise);
                 DB = new DBManager(NouvelleAvion.this, "DB.db",null,1);
 
-                ArrayList<Avion> avs = new ArrayList<Avion>();
-                avs = DB.ajouterAvion(av);
-                Toast.makeText(NouvelleAvion.this, avs.size()+" planes has been added !", Toast.LENGTH_LONG).show();
+                DB.ajouterAvion(av);
 
-
+                Toast.makeText(NouvelleAvion.this, ID+": "+nom+" est ajouté avec succès", Toast.LENGTH_LONG).show();
 
             }
+
         });
 
     }
+
+
 }
